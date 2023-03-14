@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    padding-bottom: 100px;
+}
+
+header {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+    top: 0;
+}
+
+.content {
+    margin-bottom: 50px;
+}
+
+#header-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#header-img img {
+    width:60%;
+    height:auto;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#image-banner img {
+    width:75%;
+    height:auto;
+    border-radius: 20px;
+}
+
+#image-banner:hover img {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.banner-image-card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+}
+.option-text-home{
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #ddd;
+    font-size: 20px;
+}
+.option-text-menu{
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #ddd;
+    font-size: 20px;
+}
+.option-text-about{
+    position: absolute;
+    bottom: 20%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #ddd;
+    font-size: 20px;
+}
+.option-text-order{
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #ddd;
+    font-size: 20px;
+}
+
+.option-text-home, .option-text-about, .option-text-menu, .order-button, .menu-button{
+    cursor: pointer;
+}
+
+.option-text-home:hover, .option-text-about:hover, .option-text-menu:hover, .order-button:hover, .menu-button:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.order-button {
+    background-color: #8B0000;
+    border-radius: 30% / 100%;
+    border: none;
+    position: absolute;
+    bottom: 20%;
+    right: 18%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #ddd;
+    font-size: 20px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    margin-bottom: 50px;
+}
+
+img {
+    width: 33%; /* Set the width of the image to 50% */
+    height: auto; /* Maintain aspect ratio when scaling */
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button {
+    padding: 10px 20px;
+    background-color: #8B0000;
+    border-radius: 20% / 100%;
+    border: none;
+    position: absolute;
+    color: #ddd;
+    font-size: 30px;
+}
+
+.menu-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+  
+.menu-image img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover; 
+    margin: 50px;
+}
+.menu-image p {
+    font-size: 18px;
+    color: #F6D55C;
+    text-align: center;
+  }
+
+h1 {
+    color:#F6D55C;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    color:lightgray;
+    font-size: 20px;
+    text-align: center;
+}
+
+h3 {
+    color:#F6D55C;
+}
+
+p {
+    color:#173F5F;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
