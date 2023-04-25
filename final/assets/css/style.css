@@ -1,0 +1,147 @@
+body {
+	background-color: #2F2F2F;
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+	transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+.content {
+	width: 600px;
+	margin: 200px auto auto auto;
+}
+
+
+.hidden {
+	display: none;
+}
+
+.loading-screen {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #121212;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .loading-animation {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 10px solid rgba(255, 255, 255, 0.1);
+	border-top-color: #3498db;
+	animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+  
+  .loading-counter {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 1rem; 
+	margin-left: 1rem; 
+	color: #3498db;
+	animation: count 5s ease-out forwards;
+  }
+  
+  @keyframes count {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
+
+
+  #game {
+	border: 1px solid #333;
+	display: block;
+	margin: auto;
+	background-color:rgba(255, 255, 255, 0.12);
+	cursor: pointer;
+  }
+
+  #toggleButton {
+	width: 200px;
+	display: block;
+	margin: auto;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #67523e;
+	padding: 10px 18px;
+	margin-top: 20px;
+	border-radius: 21px;
+	white-space: nowrap;
+	background-color: #ebf6e0;
+	background-image: radial-gradient(#67523e 0,#67523e 75%,transparent 0,transparent 100%);
+	background-repeat: no-repeat;
+	background-size: 0 0;
+	background-position: 50% 50%;
+	border: 1px solid #67523e;
+	transition: 0.2s;
+	cursor: pointer;
+  }
+  
+  #toggleButton:hover {
+	color: #ebf6e0;
+	background-size: 105% 150%;
+  }
+  
+  
+  .light-mode {
+	background: #ECECEC;
+  }
+  
+  .light-mode .container {
+	background:rgba(255, 255, 255, 0.12);
+  }
+  
+#ball {
+    display: block;
+    height: 150px;
+    width: 150px;
+	border-radius: 50%;
+	margin-top: 20px;
+    z-index: 1;
+    transform: translateX(-200px);
+    animation-name: ball-roll;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 0.1);
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+#ball{
+    position: relative;
+    margin: 0 auto;
+}
+
+
+@keyframes ball-roll {
+    0% {
+      transform: translateX(-200px);
+    }
+    50% {
+      transform: translateX(0px) rotate(180deg);
+    }
+    100% {
+      transform: translateX(200px) rotate(360deg);
+    }
+}
